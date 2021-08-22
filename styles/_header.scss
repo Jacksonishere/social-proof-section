@@ -1,0 +1,17 @@
+.header{
+    width: 100%;
+    max-width: 400px;
+
+    
+    h1{
+        text-align: center;
+        color: $very-Dark-Magenta;
+    }
+
+    p{
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: 500;
+        color: $dark-Grayish-Magenta;
+    }
+}
