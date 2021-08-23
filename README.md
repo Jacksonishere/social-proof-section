@@ -14,7 +14,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://condescending-leavitt-70bd6e.netlify.app/)
+- Live Site URL: [Solution](https://condescending-leavitt-70bd6e.netlify.app/)
 
 
 ### Built with
