@@ -2,7 +2,7 @@
 	width: 100%;
 	@include flex(column);
 
-	@include breakpoint-up(xlarge) {
+	@include breakpoint-up(large) {
 		justify-content: center;
 		grid-column: 2 / 3;
 	}
@@ -18,20 +18,21 @@
 			margin-top: 0.875rem;
 		}
 
-		@include breakpoint-up(xlarge) {
+		@include breakpoint-up(large) {
+			padding-block: 1rem;
 			width: 85%;
 			@include flex(row, center);
 
-            &:nth-child(2){
-                align-self: center;
-            }
-            &:nth-child(3){
-                align-self: flex-end;
-            }
+			&:nth-child(2) {
+				align-self: center;
+			}
+			&:nth-child(3) {
+				align-self: flex-end;
+			}
 		}
 
 		.stars {
-			@include breakpoint-up(xlarge) {
+			@include breakpoint-up(large) {
 				flex: 40%;
 			}
 			// outline: solid 1px magenta;
@@ -46,10 +47,10 @@
 			}
 		}
 		p {
-			@include breakpoint-down(large) {
+			@include breakpoint-down(medium) {
 				margin-top: 0.875rem;
 			}
-			@include breakpoint-up(xlarge) {
+			@include breakpoint-up(large) {
 				flex: 60%;
 			}
 			strong {

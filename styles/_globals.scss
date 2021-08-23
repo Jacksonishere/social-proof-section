@@ -22,7 +22,7 @@ body {
 	background-position: top, bottom;
 	background-repeat: no-repeat, no-repeat;
 
-	@include breakpoint-up(xlarge){
+	@include breakpoint-up(large){
 		background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
 		background-position: right 50vw top 0, left 50vw bottom 0;
 	}
@@ -39,12 +39,12 @@ main{
 	border-top: 1px transparent solid;
 
 	article{
-		@include breakpoint-down(large){
+		@include breakpoint-down(medium){
 			margin-top: 3rem;
 		}
 	}
 
-	@include breakpoint-up(xlarge){
+	@include breakpoint-up(large){
 		max-width: 1110px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;

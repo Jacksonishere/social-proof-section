@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   body {
     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
     background-position: right 50vw top 0, left 50vw bottom 0;
@@ -42,13 +42,13 @@ main {
   border-top: 1px transparent solid;
 }
 
-@media (max-width: 87.4375em) {
+@media (max-width: 63.9375em) {
   main article {
     margin-top: 3rem;
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   main {
     max-width: 1110px;
     display: -ms-grid;
@@ -66,7 +66,7 @@ main {
   text-align: center;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .header {
     max-width: 430px;
     text-align: left;
@@ -98,7 +98,7 @@ main {
           flex-direction: column;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .rating-reviews {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -133,8 +133,9 @@ main {
   margin-top: 0.875rem;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .rating-reviews .rating-review {
+    padding-block: 1rem;
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -174,7 +175,7 @@ main {
           justify-content: center;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .rating-reviews .rating-review .stars {
     -webkit-box-flex: 40%;
         -ms-flex: 40%;
@@ -192,13 +193,13 @@ main {
   margin-left: 0.5rem;
 }
 
-@media (max-width: 87.4375em) {
+@media (max-width: 63.9375em) {
   .rating-reviews .rating-review p {
     margin-top: 0.875rem;
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .rating-reviews .rating-review p {
     -webkit-box-flex: 60%;
         -ms-flex: 60%;
@@ -222,7 +223,7 @@ main {
           flex-direction: column;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .written-reviews {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -267,7 +268,7 @@ main {
   margin-top: 1rem;
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .written-reviews .written-review {
     margin-top: 0rem !important;
     height: 100%;
