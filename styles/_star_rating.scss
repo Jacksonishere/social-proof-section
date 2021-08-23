@@ -1,33 +1,60 @@
-.rating-reviews{
-    width: 100%;
-    @include flex(column);
+.rating-reviews {
+	width: 100%;
+	@include flex(column);
 
-    .rating-review{
-        &:not(:first-child){
-            margin-top: .875rem;
-        }
-        
-        padding-block: .875rem;
-        border-radius: 8px;
-        width: 100%;
-        background-color: $light-Grayish-Magenta;
-        @include flex(column, center, center);
+	@include breakpoint-up(xlarge) {
+		justify-content: center;
+		grid-column: 2 / 3;
+	}
 
-        .stars{
-            @include flex(row, center, center);
+	.rating-review {
+		padding-block: 0.875rem;
+		border-radius: 8px;
+		width: 100%;
+		background-color: $light-Grayish-Magenta;
 
-            img{
-                display: inline-block;
-                max-width: 100%;
-                height: auto;
+		@include flex(column, center, center);
+		&:not(:first-child) {
+			margin-top: 0.875rem;
+		}
+
+		@include breakpoint-up(xlarge) {
+			width: 85%;
+			@include flex(row, center);
+
+            &:nth-child(2){
+                align-self: center;
             }
-
-        }
-        p{
-            margin-top: .875rem;
-            strong{
-                color: $very-Dark-Magenta;
+            &:nth-child(3){
+                align-self: flex-end;
             }
-        } 
-    }
+		}
+
+		.stars {
+			@include breakpoint-up(xlarge) {
+				flex: 40%;
+			}
+			// outline: solid 1px magenta;
+			@include flex(row, center, center);
+			img {
+				&:not(:first-child) {
+					margin-left: 0.5rem;
+				}
+				display: inline-block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		p {
+			@include breakpoint-down(large) {
+				margin-top: 0.875rem;
+			}
+			@include breakpoint-up(xlarge) {
+				flex: 60%;
+			}
+			strong {
+				color: $very-Dark-Magenta;
+			}
+		}
+	}
 }

@@ -9,17 +9,23 @@
 
 /** BASE **/
 body {
-	display: grid;
-	justify-content: center;
+	position: relative;
 	font-family: 'Spartan', sans-serif;
 	font-size: .9375rem;
 	min-height: 100vh;
-	padding: 5rem 1.5rem;
+	padding: 5rem 1.5rem 7rem;
+	display: grid;
+	justify-content: center;
 
 	background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
-	// background-size: 100%, 100%;
+	// background-size: unquote("min(100%, 500px)");
 	background-position: top, bottom;
 	background-repeat: no-repeat, no-repeat;
+
+	@include breakpoint-up(xlarge){
+		background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+		background-position: right 50vw top 0, left 50vw bottom 0;
+	}
 }
 
 p,blockquote{
@@ -33,6 +39,16 @@ main{
 	border-top: 1px transparent solid;
 
 	article{
-		margin-top: 3rem;
+		@include breakpoint-down(large){
+			margin-top: 3rem;
+		}
+	}
+
+	@include breakpoint-up(xlarge){
+		max-width: 1110px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		row-gap: 3.5rem;
 	}
 }
